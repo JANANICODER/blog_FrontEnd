@@ -41,7 +41,7 @@ function Register() {
     formData.append("photo", photo);
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://blogback-end.onrender.com/api/users/register",
         formData,
         {
           withCredentials: true,
